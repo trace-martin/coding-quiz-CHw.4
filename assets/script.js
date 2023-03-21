@@ -82,7 +82,7 @@ let questionDict = [
     {
         question: "Who opened the first McDonald's?",
         options: ["a. Jerry McDonald", "b. Dick and Mac McDonald", "c. Ronald McDonald", "d. Bill and Ted McDonald"],
-        answer: "b. function myFunction()"
+        answer: "b. Dick and Mac McDonald"
     },
     {
         question: "When was the first Big Mac created?",
