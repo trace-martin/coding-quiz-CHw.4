@@ -33,22 +33,22 @@
     
     <!--start - Question-->
     <div id="questions" class="questionContainer" style="display: none;">
-        <div id="questionTitle" class="#"></div>
-            <div class="vstack gap-3">
+        <div id="questionTitle" class="questionTitles"></div>
+            <div class="vstack qBtn gap-3">
                 <li style="list-style: none;"><button class="btn bg-body-tertiary border" id="answer-button0"></button></li>
                 <li style="list-style: none;"><button class="btn bg-body-tertiary border" id="answer-button1"></button></li>
                 <li style="list-style: none;"><button class="btn bg-body-tertiary border" id="answer-button2"></button></li>
                 <li style="list-style: none;"><button class="btn bg-body-tertiary border" id="answer-button3"></button></li>
             </div>
+            <div id="evaluateAnswer" class= "pt-10"style="display: none;"></div>
         </div>
-        <div id="evaluateAnswer" style="display: none;"></div>
         <!--end - Question--> 
 
         <!-- Results -->
-        <div class="justify-content-center" id="results" style="display: none;">
+        <div class="container-lg justify-content-center" id="results" style="display: none;">
             <div class="col-2"></div>
             <div class="col-8 text-left">
-                <h2 class="">Your final score is <span id="totalPoints"></span> !</h2>
+                <h2 class="container-fluid">Your final score is <span id="totalPoints"></span> !</h2>
                 <form>
                     <p class="">Enter your initials: <input id="playerName" class="form-control pt-2 pb-3 mt-2" type="text">
                     <button type="submit" id="savePlayerNameBtn" class="btn  mt-3">Submit</button>
