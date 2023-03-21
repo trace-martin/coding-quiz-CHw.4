@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
     rel="stylesheet" 
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
     crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Coding Quiz</title>
 </head>
-<body>
+<body class="bg-black text-white container-fluid">
    <!--start - highscore/timer space-->
     <div id="topBar" class="container">
         <div>
-            <a href="#" id="highscore" class="position-absolute top-0 start-0">highscores</a>
+            <a href="#" id="highscore" class="position-absolute top-0 start-0">Highscores</a>
         </div>
         <div id="timer" class="position-absolute top-0 end-0">
             <div>Timer:<span id="timerID">0</span></div>
@@ -34,31 +34,31 @@
     <!--start - Question-->
     <div id="questions" class="questionContainer" style="display: none;">
         <div id="questionTitle" class="#"></div>
-            <div>
-                <li style="list-style: none;"><button class="btn" id="answer-button0"></button></li>
-                <li style="list-style: none;"><button class="btn" id="answer-button1"></button></li>
-                <li style="list-style: none;"><button class="btn" id="answer-button2"></button></li>
-                <li style="list-style: none;"><button class="btn" id="answer-button3"></button></li>
+            <div class="vstack gap-3">
+                <li style="list-style: none;"><button class="btn bg-body-tertiary border" id="answer-button0"></button></li>
+                <li style="list-style: none;"><button class="btn bg-body-tertiary border" id="answer-button1"></button></li>
+                <li style="list-style: none;"><button class="btn bg-body-tertiary border" id="answer-button2"></button></li>
+                <li style="list-style: none;"><button class="btn bg-body-tertiary border" id="answer-button3"></button></li>
             </div>
         </div>
         <div id="evaluateAnswer" style="display: none;"></div>
         <!--end - Question--> 
 
         <!-- Results -->
-        <div class="pl-5 ml-2 pt-5 justify-content-center font-weight-bold" id="results" style="display: none;">
+        <div class="justify-content-center" id="results" style="display: none;">
             <div class="col-2"></div>
             <div class="col-8 text-left">
-                <h2 class="font-weight-bold pt-2 pb-3 m-2">Your final score is <span id="totalPoints"></span> !</h2>
+                <h2 class="">Your final score is <span id="totalPoints"></span> !</h2>
                 <form>
-                    <p class="pt-2 pb-3 m-2">Enter your initials: <input id="playerName" class="form-control pt-2 pb-3 mt-2" type="text">
+                    <p class="">Enter your initials: <input id="playerName" class="form-control pt-2 pb-3 mt-2" type="text">
                     <button type="submit" id="savePlayerNameBtn" class="btn  mt-3">Submit</button>
                     </p>
                 </form>
             </div>
         <div class="col-2"></div>
         </div>
-        <div id="highScores" class="justify-content-center font-weight-bold" style="display: none;">
-            <h2 class="font-weight-bold pt-2 pb-3 mb-2">High Scores</h2>                   
+        <div id="highScores" class="" style="display: none;">
+            <h2 class="">High Scores</h2>                   
             
             <div id="scoreBoard" class="list-group list-group-flush pt-2 pb-3 mb-2"></div>
     
@@ -70,10 +70,8 @@
         </div>
     </div>
     
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    
-    <script src="https://kit.fontawesome.com/1d37754851.js" crossorigin="anonymous"></script>
     <script src="./assets/script.js"></script>
 </body>
 </html>

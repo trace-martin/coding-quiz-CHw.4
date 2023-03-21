@@ -34,6 +34,7 @@ function timerFunc()
     questionOrder= 0;
     begin.style.display = "none";
     questions.style.display = "block";
+    topBar.style.display = "block";
 
     // Sets interval in variable
     var timeVar = setInterval(function() {
@@ -59,24 +60,23 @@ function gameOver() {
     timerID.textContent = " ";
     results.style.display = "block";
     evaluateAnswer.style.display = "none";
-    alert("GAME OVER!");
     topBar.style.display = "none";
     totalPoints.textContent = totalCorrect;
-
+    secondsLeft = 0;
 }
 
 
 
 let questionDict = [
     {
-        question: "Inside which HTML element do we put the JavaScript?",
-        options: ["a. <js>", "b. <javascript>", "c. <scripting>", "d. <script>"],
-        answer: "d. <script>"
+        question: "When was the first Big Mac created?",
+        options: ["a. 1992", "b. 1983", "c. 1975", "d. 1967"],
+        answer: "d. 1967"
     },
     {
-        question: "String values must be enclosed within _____ when being assigned to variables.",
-        options: ["a. commas", "b. curly brackets", "c. quotes", "d. parenthesis"],
-        answer: "c. quotes"
+        question: "Who first introduced the Big Mac?",
+        options: ["a. Superman", "b.Bill Gates", "c. Jim Delligatti", "d. Joe Biden"],
+        answer: "c. Jim Delligatti"
     },
     {
         question: "Arrays in JavaScript can be used to store _____.",
@@ -156,7 +156,7 @@ function evaluation(answer) {
         // console.log(correctAns);
         evaluateAnswer.textContent = "That's correct!";
     } else {
-        // wrong answers, deduct 10 seconds from timer
+        // wrong answers, deduct 20 seconds from timer
         secondsLeft -= 20;
         timerID.textContent = secondsLeft;
         evaluateAnswer.textContent = "Wrong! The correct answer is: " + questionDict[questionOrder].answer;
@@ -195,7 +195,7 @@ optionD.addEventListener("click", pickD);
 
 
 function addHighScore(event){
-    event.preventDefault();
+    // event.preventDefault();
 
     begin.style.display = "none";
     topBar.style.display = "none";
@@ -211,7 +211,7 @@ function addHighScore(event){
     if (savedPlayerScores === null) {
         savedScores = [];
     } else {
-        savedScores = JSON.parse(savedPlayerScores)
+        savedScores = $.parseJSON(savedPlayerScores)
     }
 
     var playerScore = {
@@ -237,6 +237,7 @@ function showPlayerScores() {
     highScores.style.display = "block";
     begin.style.display = "none";
     topBar.style.display = "none";
+    
 
     var savedPlayerScores = localStorage.getItem("player scores");
     
@@ -273,5 +274,5 @@ restart.addEventListener("click", function() {
 clearScoreBoard.addEventListener("click", function(){
     window.localStorage.removeItem("player scores");
     scoreBoard.innerHTML = "Scores Cleared!";
-    scoreBoard.setAttribute("style", "font-family: 'Archivo', sans-serif; font-style: italic;")
+    scoreBoard.setAttribute("style", "font-style: bold;")
 });

@@ -1,20 +1,25 @@
-# 04 Web APIs: Code Quiz
+# Code-Quiz-CHw.4
 
-## Your Task
+# User Instructions
+**First:** When you click "Lets Go".
+- The quiz will begin.
+- Timer will start (120 seconds)
+- 
 
-At some point in your journey to become a full-stack web developer, you’ll likely be asked to complete a coding assessment&mdash;perhaps as part of an interview process. A typical coding assessment includes both multiple-choice questions and interactive coding challenges. 
+ **Second:** The questions will be presented.
+- When the user answers a correct answer, they will be awarded +5 points and shown a "that is correct" at the bottom of the page.
+- When the user answers incorrectly. They will lose 20 seconds from their total timer and be given a prompt at the bottom of the screen, displaying: the is incorrect and informing them of the correct answer.
+<br><br>
 
-To help familiarize you with these tests and allow you to use the skills covered in this module, this Challenge invites you to build a timed coding quiz with multiple-choice questions. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface. 
+**Third:** When the timer hits 0 seconds or all questions have been answerd the game will be over and user directed to the submit score form.
+- User can save name/score to local storage and view highscore page.
+<br><br>
 
-This week’s coursework will equip you with all the skills you need to succeed in this assignment.
+**Fourth:** After submitting the user name (if left blank an alert will pop), they will be directed to the Highscore section.
 
-## User Story
-
-```
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-```
+- User can clear highscore with button
+- User can return to first section (Lets Go!) and retake quiz. 
+<br><br>
 
 ## Acceptance Criteria
 
@@ -32,11 +37,11 @@ WHEN the game is over
 THEN I can save my initials and my score
 ```
 
-## Mock-Up
+## Preview
 
-The following animation demonstrates the application functionality:
 
-![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.](./Assets/04-web-apis-homework-demo.gif)
+
+
 
 ## Grading Requirements
 
