@@ -18,16 +18,15 @@ var topBar = document.getElementById("topBar");
 
 var questionOrder = 0;
 var totalCorrect = 0;
-// var highScore();
+
+var timeVar = timeVar;
 
 
-
-// Events
 startTimer.addEventListener('click', timerFunc);
 
+
 var secondsLeft = 121;
- 
-// Functions
+// Time Function
 function timerFunc() 
 {   
     secondsLeft = 121;
@@ -36,7 +35,7 @@ function timerFunc()
     questions.style.display = "block";
     topBar.style.display = "block";
 
-    // Sets interval in variable
+    
     var timeVar = setInterval(function() {
         secondsLeft--;
         console.log(secondsLeft);
@@ -51,7 +50,7 @@ function timerFunc()
       }, 1000);
 
       nextQ();
-}
+};
     
 function gameOver() {
     //textbox to enter initials and save high score
@@ -63,7 +62,7 @@ function gameOver() {
     topBar.style.display = "none";
     totalPoints.textContent = totalCorrect;
     secondsLeft = 0;
-}
+};
 
 
 
@@ -136,7 +135,7 @@ function evaluation(answer) {
         // if no more questions, run game over function
         gameOver();
     }
-}
+};
 
 function pickA() {
     evaluation(0);
@@ -229,6 +228,7 @@ highscore.addEventListener("click", function(event) {
     showPlayerScores(event);
     questions.style.display = "none";
     evaluateAnswer.style.display = "none";
+    clearInterval(timeVar);
 });
 
 restart.addEventListener("click", function() {
