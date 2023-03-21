@@ -69,6 +69,21 @@ function gameOver() {
 
 let questionDict = [
     {
+        question: "When was the FIRST McDonald's opened?",
+        options: ["a. 1965 ", "b. 1955", "c. 1975", "d. 1970"],
+        answer: "b. 1955"
+    },
+    {
+        question: "What city was the first McDonald's opened in?",
+        options: ["a. Washington D.C.", "b. Memphis", "c. San Bernardino", "d. Dallas"],
+        answer: "c. San Bernardino"
+    },
+    {
+        question: "Who opened the first McDonald's?",
+        options: ["a. Jerry McDonald", "b. Dick and Mac McDonald", "c. Ronald McDonald", "d. Bill and Ted McDonald"],
+        answer: "b. function myFunction()"
+    },
+    {
         question: "When was the first Big Mac created?",
         options: ["a. 1992", "b. 1983", "c. 1975", "d. 1967"],
         answer: "d. 1967"
@@ -78,56 +93,7 @@ let questionDict = [
         options: ["a. Superman", "b.Bill Gates", "c. Jim Delligatti", "d. Joe Biden"],
         answer: "c. Jim Delligatti"
     },
-    {
-        question: "Arrays in JavaScript can be used to store _____.",
-        options: ["a. numbers and strings", "b. other arrays", "c. booleans", "d. all of the above"],
-        answer: "b. other arrays"
-    },
-    {
-        question: "Commonly used data types DO NOT include:",
-        options: ["a. strings", "b. booleans", "c. alerts", "d. numbers"],
-        answer: "c. alerts"
-    },
-    {
-        question: "How do you create a function in JavaScript",
-        options: ["a. function = myFunction()", "b. function myFunction()", "c. function:myFunction()", "d. createMyFunction()"],
-        answer: "b. function myFunction()"
-    },
-    {
-        question: "How do you call a function named myFunction?",
-        options: ["a. call myFunction()", "b. call function myFunction()", "c. myFunction()", "d. call myFunction"],
-        answer: "c. myFunctions()"
-    },
-    {
-        question: "To see if two variables are equal in an if / else statement you would use ____.",
-        options: ["a. =", "b. ==", "c. 'equals'", "d. !="],
-        answer: "b. =="
-    },
-    {
-        question: "The first index of an array is ____.",
-        options: ["a. 0", "b. 1", "c. 8", "d. any"],
-        answer: "a. 0"
-    },
-    {
-        question: "Who invented JavaScript?",
-        options: ["a. Douglas Crockford", "b. Sheryl Sandberg", "c. Brendan Eich", "d. Ben Javascript"],
-        answer: "c. Brendan Eich"
-    },
-    {
-        question: "How to write an IF statement in JavaScript?",
-        options: ["a. if i == 5 then", "b. if i = 5 then", "c. if(i == 5)", "d. if i = 5"],
-        answer: "c. if(i == 5)"
-    },
-    {
-        question: "How do you add a comment in a JavaScript?",
-        options: ["a. //This is a comment", "b. <!--This is a comment-->", "c. 'This is a comment", "d. * This is a comment *"],
-        answer: "a. //This is a comment"
-    },
-    {
-        question: "Which event occurs when the user clicks on an HTML element?",
-        options: ["a. onclick", "b. onchange", "c. onmouseover", "d. onmouseclick"],
-        answer: "a. onclick"
-    }
+    
 ];
 
 var questionContainer = document.getElementById("questionContainer");
