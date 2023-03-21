@@ -195,7 +195,7 @@ optionD.addEventListener("click", pickD);
 
 
 function addHighScore(event){
-    // event.preventDefault();
+    event.preventDefault();
 
     begin.style.display = "none";
     topBar.style.display = "none";
