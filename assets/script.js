@@ -24,28 +24,29 @@ var timeVar = timeVar;
 
 startTimer.addEventListener('click', timerFunc);
 
-
+timer.style.display = "none";
 var secondsLeft = 121;
 // Time Function
 function timerFunc() 
 {   
     secondsLeft = 121;
     questionOrder= 0;
+    timer.style.display = "block";
     begin.style.display = "none";
     questions.style.display = "block";
-    topBar.style.display = "block";
+    highscore.style.display = "none";
 
     
     var timeVar = setInterval(function() {
         secondsLeft--;
-        console.log(secondsLeft);
         timerID.textContent = secondsLeft;
         //if timer runs out or all the questions have been answered
         if(secondsLeft < 0 || questionOrder == questionDict.length) {
            // Stops execution of action at set interval
            clearInterval(timeVar);
            gameOver();
-         }
+
+         } 
     
       }, 1000);
 
@@ -60,8 +61,9 @@ function gameOver() {
     results.style.display = "block";
     evaluateAnswer.style.display = "none";
     topBar.style.display = "none";
+    highScores.style.display = "none";
+    begin.style.display = "none";
     totalPoints.textContent = totalCorrect;
-    secondsLeft = 0;
 };
 
 
@@ -234,10 +236,15 @@ highscore.addEventListener("click", function(event) {
 restart.addEventListener("click", function() {
     begin.style.display = "block";
     highScores.style.display = "none";
-    topBar.style.display = "block";
+    timer.style.display = "none";
+    results.style.display = "none";
+    secondsLeft = "null";
+    highscore.style.display = "block";
+    topBar.style.display = "block"
 });
 
 clearScoreBoard.addEventListener("click", function(){
+    // localStorage.setItem('player scores', []);
     window.localStorage.removeItem("player scores");
     scoreBoard.innerHTML = "Scores Cleared!";
     scoreBoard.setAttribute("style", "font-style: bold;")

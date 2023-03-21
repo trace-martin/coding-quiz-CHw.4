@@ -1,6 +1,6 @@
 # Code-Quiz-CHw.4
 
-# User Instructions
+## User Instructions
 **First:** When you click "Lets Go".
 - The quiz will begin.
 - Timer will start (120 seconds)
@@ -44,17 +44,10 @@ THEN I can save my initials and my score
 
 # Author
 Trace Martin
+
 # Code Guide
-[MiMi](https://github.com/mmeii)
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
----
-
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+[Mei Tu](https://github.com/mmeii)
+<br>
+[JQuery](https://jqueryui.com/)
+<br>
+[Bootstrap](https://getbootstrap.com/)
