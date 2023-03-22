@@ -35,12 +35,19 @@ THEN the game is over
 WHEN the game is over
 THEN I can save my initials and my score
 ```
+<br>
 
 ## Preview
-
-
-
-
+![image](https://user-images.githubusercontent.com/123417800/226799060-17ec83b7-889e-478d-bbc7-95f91b00afd4.png)
+<br>
+![image](https://user-images.githubusercontent.com/123417800/226799278-308e6eca-3ac2-40d2-b1b5-76ddf4bfbc52.png)
+<br>
+![image](https://user-images.githubusercontent.com/123417800/226799366-bf1ff79d-0ab5-499d-8052-9c6d3341f12d.png)
+<br>
+![image](https://user-images.githubusercontent.com/123417800/226799421-353a3372-712d-47dc-8676-db47619ca34f.png)
+<br>
+![image](https://user-images.githubusercontent.com/123417800/226799460-6870703f-1da5-4539-b6e6-b544daa16487.png)
+<br><br>
 
 # Author
 Trace Martin
