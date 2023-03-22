@@ -5,16 +5,16 @@
 - The quiz will begin.
 - Timer will start (120 seconds)
 
- **Second:** The questions will be presented.
+ **Next:** The questions will be presented.
 - When the user answers a correct answer, they will be awarded +5 points and shown a "that is correct" at the bottom of the page.
 - When the user answers incorrectly. They will lose 20 seconds from their total timer and be given a prompt at the bottom of the screen, displaying: the is incorrect and informing them of the correct answer.
 <br><br>
 
-**Third:** When the timer hits 0 seconds or all questions have been answerd the game will be over and user directed to the submit score form.
+**Then:** When the timer hits 0 seconds or all questions have been answerd the game will be over and user directed to the submit score form.
 - User can save name/score to local storage and view highscore page.
 <br><br>
 
-**Fourth:** After submitting the user name (if left blank an alert will pop), they will be directed to the Highscore section.
+**Finally:** After submitting the user name (if left blank an alert will pop), they will be directed to the Highscore section.
 
 - User can clear highscore with button
 - User can return to first section (Lets Go!) and retake quiz. 
