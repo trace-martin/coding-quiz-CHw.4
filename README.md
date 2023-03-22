@@ -49,6 +49,11 @@ THEN I can save my initials and my score
 ![image](https://user-images.githubusercontent.com/123417800/226799460-6870703f-1da5-4539-b6e6-b544daa16487.png)
 <br><br>
 
+# Known Issue:
+When user "clears score". <br>
+They must reload the page for any following scores to be shown.<br>
+Issue w/ get savedPlayerScores(javaS) after clear (I believe).
+
 # Author
 Trace Martin
 
