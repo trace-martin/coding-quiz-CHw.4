@@ -1,5 +1,9 @@
 # Code-Quiz-CHw.4
 
+## Deployed
+
+A deployed page can be found [here](https://trace-martin.github.io/coding-quiz-CHw.4/)!
+
 ## User Instructions
 **First:** When you click "Lets Go".
 - The quiz will begin.
