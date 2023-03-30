@@ -70,30 +70,51 @@ function gameOver() {
 
 let questionDict = [
     {
-        question: "When was the FIRST McDonald's opened?",
-        options: ["a. 1965 ", "b. 1955", "c. 1975", "d. 1970"],
-        answer: "b. 1955"
+        question: "Inside which HTML element do we put the JavaScript?",
+        choices: ["a. <js>", "b. <javascript>", "c. <scripting>", "d. <script>"],
+        answer: "d. <script>"
     },
     {
-        question: "What city was the first McDonald's opened in?",
-        options: ["a. Washington D.C.", "b. Memphis", "c. San Bernardino", "d. Dallas"],
-        answer: "c. San Bernardino"
+        question: "String values must be enclosed within _____ when being assigned to variables.",
+        choices: ["a. quotes", "b. curly brackets", "c. commas", "d. square brackets"],
+        answer: "a. quotes"
     },
     {
-        question: "Who opened the first McDonald's?",
-        options: ["a. Tom and Jerry McDonald", "b. Dick and Mac McDonald", "c. Ronald McDonald", "d. Bill and Ted McDonald"],
-        answer: "b. Dick and Mac McDonald"
+        question: "Arrays in JavaScript can be used to store _____.",
+        choices: ["a. numbers and strings", "b. other arrays", "c. booleans", "d. all of the above"],
+        answer: "b. other arrays"
     },
     {
-        question: "When was the first Big Mac created?",
-        options: ["a. 1992", "b. 1983", "c. 1975", "d. 1967"],
-        answer: "d. 1967"
+        question: "Commonly used data types DO NOT include:",
+        choices: ["a. strings", "b. booleans", "c. alerts", "d. numbers"],
+        answer: "c. alerts"
     },
     {
-        question: "Who first introduced the Big Mac?",
-        options: ["a. Superman", "b.Bill Gates", "c. Jim Delligatti", "d. Joe Biden"],
-        answer: "c. Jim Delligatti"
+        question: "How do you call a function?",
+        choices: ["a.myFunction()", "b. call myFunction()", "c.call myFunction(e)", "d. all"],
+        answer: "a. myFunction()"
     },
+    {
+        question: "To see if two variables are equal in an if / else statement you would use ____.",
+        choices: ["a. ==", "b. =", "c. ===", "d. !==="],
+        answer: "a. =="
+    },
+    {
+        question: "The first index of an array is ____.",
+        choices: ["a. 0", "b. 1", "c. 2", "d. 3"],
+        answer: "a. 0"
+    },
+    {
+        question: "How to write an IF statement in JavaScript?",
+        choices: ["a. if i == 5 then", "b. if i = 5 then", "c. if(i == 5)", "d. if i = 5"],
+        answer: "c. if(i == 5)"
+    },
+    {
+        question: "How do you add a comment in a JavaScript?",
+        choices: ["a. <!--This is a comment--> ", "b.//This is a comment", "c. 'This is a comment", "d. * This is a comment *"],
+        answer: "b. //This is a comment"
+    },
+
     
 ];
 
