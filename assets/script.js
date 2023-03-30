@@ -71,51 +71,49 @@ function gameOver() {
 let questionDict = [
     {
         question: "Inside which HTML element do we put the JavaScript?",
-        choices: ["a. <js>", "b. <javascript>", "c. <scripting>", "d. <script>"],
+        options: ["a. <js>", "b. <javascript>", "c. <scripting>", "d. <script>"],
         answer: "d. <script>"
     },
     {
         question: "String values must be enclosed within _____ when being assigned to variables.",
-        choices: ["a. quotes", "b. curly brackets", "c. commas", "d. square brackets"],
-        answer: "a. quotes"
+        options: ["a. commas", "b. curly brackets", "c. quotes", "d. parenthesis"],
+        answer: "c. quotes"
     },
     {
         question: "Arrays in JavaScript can be used to store _____.",
-        choices: ["a. numbers and strings", "b. other arrays", "c. booleans", "d. all of the above"],
+        options: ["a. numbers and strings", "b. other arrays", "c. booleans", "d. all of the above"],
         answer: "b. other arrays"
     },
     {
+        question: "How do you create a function in JavaScript",
+        options: ["a. function = myFunction(e)", "b.myFunction()", "c. function myFunction()", "d. createMyFunction()"],
+        answer: "c. function myFunction()"
+    },
+    {
         question: "Commonly used data types DO NOT include:",
-        choices: ["a. strings", "b. booleans", "c. alerts", "d. numbers"],
-        answer: "c. alerts"
-    },
-    {
-        question: "How do you call a function?",
-        choices: ["a.myFunction()", "b. call myFunction()", "c.call myFunction(e)", "d. all"],
-        answer: "a. myFunction()"
-    },
-    {
-        question: "To see if two variables are equal in an if / else statement you would use ____.",
-        choices: ["a. ==", "b. =", "c. ===", "d. !==="],
-        answer: "a. =="
+        options: ["a. alerts", "b. booleans", "c. strings", "d. numbers"],
+        answer: "a. alerts"
     },
     {
         question: "The first index of an array is ____.",
-        choices: ["a. 0", "b. 1", "c. 2", "d. 3"],
+        options: ["a. '0'", "b. 1", "c. 2", "d. 3"],
         answer: "a. 0"
     },
     {
-        question: "How to write an IF statement in JavaScript?",
-        choices: ["a. if i == 5 then", "b. if i = 5 then", "c. if(i == 5)", "d. if i = 5"],
-        answer: "c. if(i == 5)"
+        question: "Who invented JavaScript?",
+        options: ["a. Douglas Crockford", "b. Sheryl Sandberg", "c. Brendan Eich", "d. Ben Javascript"],
+        answer: "c. Brendan Eich"
     },
     {
-        question: "How do you add a comment in a JavaScript?",
-        choices: ["a. <!--This is a comment--> ", "b.//This is a comment", "c. 'This is a comment", "d. * This is a comment *"],
-        answer: "b. //This is a comment"
+        question: "To see if two variables are equal in an if / else statement you would use ____.",
+        options: ["a. =", "b. ==", "c. ===", "d. !==="],
+        answer: "b. =="
     },
-
-    
+    {
+        question: "How to write an IF statement in JavaScript?",
+        options: ["a. if i === 5 then", "b. if i = 5 then", "c. if(i == 5)", "d. if i != 5"],
+        answer: "c. if(i == 5)"
+    },
 ];
 
 var questionContainer = document.getElementById("questionContainer");
